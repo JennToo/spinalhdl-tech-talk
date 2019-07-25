@@ -1,0 +1,804 @@
+[[package]]
+category = "dev"
+description = "A configurable sidebar-enabled Sphinx theme"
+name = "alabaster"
+optional = false
+python-versions = "*"
+version = "0.7.12"
+
+[package.source]
+reference = "artifactory"
+type = "legacy"
+url = "https://artifactory.adtran.com/artifactory/api/pypi/pypi/simple"
+
+[[package]]
+category = "dev"
+description = "A small Python module for determining appropriate platform-specific dirs, e.g. a \"user data dir\"."
+name = "appdirs"
+optional = false
+python-versions = "*"
+version = "1.4.3"
+
+[package.source]
+reference = "artifactory"
+type = "legacy"
+url = "https://artifactory.adtran.com/artifactory/api/pypi/pypi/simple"
+
+[[package]]
+category = "dev"
+description = "An abstract syntax tree for Python with inference support."
+name = "astroid"
+optional = false
+python-versions = ">=3.4.*"
+version = "2.2.5"
+
+[package.dependencies]
+lazy-object-proxy = "*"
+six = "*"
+typed-ast = ">=1.3.0"
+wrapt = "*"
+
+[package.source]
+reference = "artifactory"
+type = "legacy"
+url = "https://artifactory.adtran.com/artifactory/api/pypi/pypi/simple"
+
+[[package]]
+category = "dev"
+description = "Atomic file writes."
+name = "atomicwrites"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+version = "1.3.0"
+
+[package.source]
+reference = "artifactory"
+type = "legacy"
+url = "https://artifactory.adtran.com/artifactory/api/pypi/pypi/simple"
+
+[[package]]
+category = "dev"
+description = "Classes Without Boilerplate"
+name = "attrs"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+version = "19.1.0"
+
+[package.source]
+reference = "artifactory"
+type = "legacy"
+url = "https://artifactory.adtran.com/artifactory/api/pypi/pypi/simple"
+
+[[package]]
+category = "dev"
+description = "Internationalization utilities"
+name = "babel"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+version = "2.7.0"
+
+[package.dependencies]
+pytz = ">=2015.7"
+
+[package.source]
+reference = "artifactory"
+type = "legacy"
+url = "https://artifactory.adtran.com/artifactory/api/pypi/pypi/simple"
+
+[[package]]
+category = "dev"
+description = "The uncompromising code formatter."
+name = "black"
+optional = false
+python-versions = ">=3.6"
+version = "18.9b0"
+
+[package.dependencies]
+appdirs = "*"
+attrs = ">=17.4.0"
+click = ">=6.5"
+toml = ">=0.9.4"
+
+[package.source]
+reference = "artifactory"
+type = "legacy"
+url = "https://artifactory.adtran.com/artifactory/api/pypi/pypi/simple"
+
+[[package]]
+category = "dev"
+description = "Python package for providing Mozilla's CA Bundle."
+name = "certifi"
+optional = false
+python-versions = "*"
+version = "2019.6.16"
+
+[package.source]
+reference = "artifactory"
+type = "legacy"
+url = "https://artifactory.adtran.com/artifactory/api/pypi/pypi/simple"
+
+[[package]]
+category = "dev"
+description = "Universal encoding detector for Python 2 and 3"
+name = "chardet"
+optional = false
+python-versions = "*"
+version = "3.0.4"
+
+[package.source]
+reference = "artifactory"
+type = "legacy"
+url = "https://artifactory.adtran.com/artifactory/api/pypi/pypi/simple"
+
+[[package]]
+category = "dev"
+description = "Composable command line interface toolkit"
+name = "click"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+version = "7.0"
+
+[package.source]
+reference = "artifactory"
+type = "legacy"
+url = "https://artifactory.adtran.com/artifactory/api/pypi/pypi/simple"
+
+[[package]]
+category = "dev"
+description = "Cross-platform colored terminal text."
+marker = "sys_platform == \"win32\""
+name = "colorama"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+version = "0.4.1"
+
+[package.source]
+reference = "artifactory"
+type = "legacy"
+url = "https://artifactory.adtran.com/artifactory/api/pypi/pypi/simple"
+
+[[package]]
+category = "dev"
+description = "Code coverage measurement for Python"
+name = "coverage"
+optional = false
+python-versions = ">=2.6, !=3.0.*, !=3.1.*, !=3.2.*, <4"
+version = "4.5.3"
+
+[package.source]
+reference = "artifactory"
+type = "legacy"
+url = "https://artifactory.adtran.com/artifactory/api/pypi/pypi/simple"
+
+[[package]]
+category = "dev"
+description = "Docutils -- Python Documentation Utilities"
+name = "docutils"
+optional = false
+python-versions = "*"
+version = "0.15"
+
+[package.source]
+reference = "artifactory"
+type = "legacy"
+url = "https://artifactory.adtran.com/artifactory/api/pypi/pypi/simple"
+
+[[package]]
+category = "dev"
+description = "Internationalized Domain Names in Applications (IDNA)"
+name = "idna"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+version = "2.8"
+
+[package.source]
+reference = "artifactory"
+type = "legacy"
+url = "https://artifactory.adtran.com/artifactory/api/pypi/pypi/simple"
+
+[[package]]
+category = "dev"
+description = "Getting image size from png/jpeg/jpeg2000/gif file"
+name = "imagesize"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+version = "1.1.0"
+
+[package.source]
+reference = "artifactory"
+type = "legacy"
+url = "https://artifactory.adtran.com/artifactory/api/pypi/pypi/simple"
+
+[[package]]
+category = "dev"
+description = "Read metadata from Python packages"
+name = "importlib-metadata"
+optional = false
+python-versions = ">=2.7,!=3.0,!=3.1,!=3.2,!=3.3"
+version = "0.18"
+
+[package.dependencies]
+zipp = ">=0.5"
+
+[package.source]
+reference = "artifactory"
+type = "legacy"
+url = "https://artifactory.adtran.com/artifactory/api/pypi/pypi/simple"
+
+[[package]]
+category = "dev"
+description = "A Python utility / library to sort Python imports."
+name = "isort"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+version = "4.3.21"
+
+[package.source]
+reference = "artifactory"
+type = "legacy"
+url = "https://artifactory.adtran.com/artifactory/api/pypi/pypi/simple"
+
+[[package]]
+category = "dev"
+description = "A small but fast and easy to use stand-alone template engine written in pure python."
+name = "jinja2"
+optional = false
+python-versions = "*"
+version = "2.10.1"
+
+[package.dependencies]
+MarkupSafe = ">=0.23"
+
+[package.source]
+reference = "artifactory"
+type = "legacy"
+url = "https://artifactory.adtran.com/artifactory/api/pypi/pypi/simple"
+
+[[package]]
+category = "dev"
+description = "A fast and thorough lazy object proxy."
+name = "lazy-object-proxy"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+version = "1.4.1"
+
+[package.source]
+reference = "artifactory"
+type = "legacy"
+url = "https://artifactory.adtran.com/artifactory/api/pypi/pypi/simple"
+
+[[package]]
+category = "dev"
+description = "Safely add untrusted strings to HTML/XML markup."
+name = "markupsafe"
+optional = false
+python-versions = ">=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*"
+version = "1.1.1"
+
+[package.source]
+reference = "artifactory"
+type = "legacy"
+url = "https://artifactory.adtran.com/artifactory/api/pypi/pypi/simple"
+
+[[package]]
+category = "dev"
+description = "McCabe checker, plugin for flake8"
+name = "mccabe"
+optional = false
+python-versions = "*"
+version = "0.6.1"
+
+[package.source]
+reference = "artifactory"
+type = "legacy"
+url = "https://artifactory.adtran.com/artifactory/api/pypi/pypi/simple"
+
+[[package]]
+category = "dev"
+description = "More routines for operating on iterables, beyond itertools"
+name = "more-itertools"
+optional = false
+python-versions = ">=3.4"
+version = "7.2.0"
+
+[package.source]
+reference = "artifactory"
+type = "legacy"
+url = "https://artifactory.adtran.com/artifactory/api/pypi/pypi/simple"
+
+[[package]]
+category = "dev"
+description = "Core utilities for Python packages"
+name = "packaging"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+version = "19.0"
+
+[package.dependencies]
+pyparsing = ">=2.0.2"
+six = "*"
+
+[package.source]
+reference = "artifactory"
+type = "legacy"
+url = "https://artifactory.adtran.com/artifactory/api/pypi/pypi/simple"
+
+[[package]]
+category = "dev"
+description = "plugin and hook calling mechanisms for python"
+name = "pluggy"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+version = "0.12.0"
+
+[package.dependencies]
+importlib-metadata = ">=0.12"
+
+[package.source]
+reference = "artifactory"
+type = "legacy"
+url = "https://artifactory.adtran.com/artifactory/api/pypi/pypi/simple"
+
+[[package]]
+category = "dev"
+description = "library with cross-python path, ini-parsing, io, code, log facilities"
+name = "py"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+version = "1.8.0"
+
+[package.source]
+reference = "artifactory"
+type = "legacy"
+url = "https://artifactory.adtran.com/artifactory/api/pypi/pypi/simple"
+
+[[package]]
+category = "dev"
+description = "Python style guide checker"
+name = "pycodestyle"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+version = "2.5.0"
+
+[package.source]
+reference = "artifactory"
+type = "legacy"
+url = "https://artifactory.adtran.com/artifactory/api/pypi/pypi/simple"
+
+[[package]]
+category = "dev"
+description = "Python docstring style checker"
+name = "pydocstyle"
+optional = false
+python-versions = "*"
+version = "4.0.0"
+
+[package.dependencies]
+snowballstemmer = "*"
+
+[package.source]
+reference = "artifactory"
+type = "legacy"
+url = "https://artifactory.adtran.com/artifactory/api/pypi/pypi/simple"
+
+[[package]]
+category = "dev"
+description = "passive checker of Python programs"
+name = "pyflakes"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+version = "2.1.1"
+
+[package.source]
+reference = "artifactory"
+type = "legacy"
+url = "https://artifactory.adtran.com/artifactory/api/pypi/pypi/simple"
+
+[[package]]
+category = "dev"
+description = "Pygments is a syntax highlighting package written in Python."
+name = "pygments"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
+version = "2.4.2"
+
+[package.source]
+reference = "artifactory"
+type = "legacy"
+url = "https://artifactory.adtran.com/artifactory/api/pypi/pypi/simple"
+
+[[package]]
+category = "dev"
+description = "pylama -- Code audit tool for python"
+name = "pylama"
+optional = false
+python-versions = "*"
+version = "7.7.1"
+
+[package.dependencies]
+mccabe = ">=0.5.2"
+pycodestyle = ">=2.3.1"
+pydocstyle = ">=2.0.0"
+pyflakes = ">=1.5.0"
+
+[package.source]
+reference = "artifactory"
+type = "legacy"
+url = "https://artifactory.adtran.com/artifactory/api/pypi/pypi/simple"
+
+[[package]]
+category = "dev"
+description = "python code static checker"
+name = "pylint"
+optional = false
+python-versions = ">=3.4.*"
+version = "2.3.1"
+
+[package.dependencies]
+astroid = ">=2.2.0,<3"
+colorama = "*"
+isort = ">=4.2.5,<5"
+mccabe = ">=0.6,<0.7"
+
+[package.source]
+reference = "artifactory"
+type = "legacy"
+url = "https://artifactory.adtran.com/artifactory/api/pypi/pypi/simple"
+
+[[package]]
+category = "dev"
+description = "Python parsing module"
+name = "pyparsing"
+optional = false
+python-versions = ">=2.6, !=3.0.*, !=3.1.*, !=3.2.*"
+version = "2.4.1.1"
+
+[package.source]
+reference = "artifactory"
+type = "legacy"
+url = "https://artifactory.adtran.com/artifactory/api/pypi/pypi/simple"
+
+[[package]]
+category = "dev"
+description = "pytest: simple powerful testing with Python"
+name = "pytest"
+optional = false
+python-versions = ">=3.5"
+version = "5.0.1"
+
+[package.dependencies]
+atomicwrites = ">=1.0"
+attrs = ">=17.4.0"
+colorama = "*"
+importlib-metadata = ">=0.12"
+more-itertools = ">=4.0.0"
+packaging = "*"
+pluggy = ">=0.12,<1.0"
+py = ">=1.5.0"
+wcwidth = "*"
+
+[package.source]
+reference = "artifactory"
+type = "legacy"
+url = "https://artifactory.adtran.com/artifactory/api/pypi/pypi/simple"
+
+[[package]]
+category = "dev"
+description = "Pytest plugin for measuring coverage."
+name = "pytest-cov"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+version = "2.7.1"
+
+[package.dependencies]
+coverage = ">=4.4"
+pytest = ">=3.6"
+
+[package.source]
+reference = "artifactory"
+type = "legacy"
+url = "https://artifactory.adtran.com/artifactory/api/pypi/pypi/simple"
+
+[[package]]
+category = "dev"
+description = "World timezone definitions, modern and historical"
+name = "pytz"
+optional = false
+python-versions = "*"
+version = "2019.1"
+
+[package.source]
+reference = "artifactory"
+type = "legacy"
+url = "https://artifactory.adtran.com/artifactory/api/pypi/pypi/simple"
+
+[[package]]
+category = "dev"
+description = "Python HTTP for Humans."
+name = "requests"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
+version = "2.22.0"
+
+[package.dependencies]
+certifi = ">=2017.4.17"
+chardet = ">=3.0.2,<3.1.0"
+idna = ">=2.5,<2.9"
+urllib3 = ">=1.21.1,<1.25.0 || >1.25.0,<1.25.1 || >1.25.1,<1.26"
+
+[package.source]
+reference = "artifactory"
+type = "legacy"
+url = "https://artifactory.adtran.com/artifactory/api/pypi/pypi/simple"
+
+[[package]]
+category = "dev"
+description = "Python 2 and 3 compatibility utilities"
+name = "six"
+optional = false
+python-versions = ">=2.6, !=3.0.*, !=3.1.*"
+version = "1.12.0"
+
+[package.source]
+reference = "artifactory"
+type = "legacy"
+url = "https://artifactory.adtran.com/artifactory/api/pypi/pypi/simple"
+
+[[package]]
+category = "dev"
+description = "This package provides 23 stemmers for 22 languages generated from Snowball algorithms."
+name = "snowballstemmer"
+optional = false
+python-versions = "*"
+version = "1.9.0"
+
+[package.source]
+reference = "artifactory"
+type = "legacy"
+url = "https://artifactory.adtran.com/artifactory/api/pypi/pypi/simple"
+
+[[package]]
+category = "dev"
+description = "Python documentation generator"
+name = "sphinx"
+optional = false
+python-versions = ">=3.5"
+version = "2.1.2"
+
+[package.dependencies]
+Jinja2 = ">=2.3"
+Pygments = ">=2.0"
+alabaster = ">=0.7,<0.8"
+babel = ">=1.3,<2.0 || >2.0"
+colorama = ">=0.3.5"
+docutils = ">=0.12"
+imagesize = "*"
+packaging = "*"
+requests = ">=2.5.0"
+setuptools = "*"
+snowballstemmer = ">=1.1"
+sphinxcontrib-applehelp = "*"
+sphinxcontrib-devhelp = "*"
+sphinxcontrib-htmlhelp = "*"
+sphinxcontrib-jsmath = "*"
+sphinxcontrib-qthelp = "*"
+sphinxcontrib-serializinghtml = "*"
+
+[package.source]
+reference = "artifactory"
+type = "legacy"
+url = "https://artifactory.adtran.com/artifactory/api/pypi/pypi/simple"
+
+[[package]]
+category = "dev"
+description = ""
+name = "sphinxcontrib-applehelp"
+optional = false
+python-versions = "*"
+version = "1.0.1"
+
+[package.source]
+reference = "artifactory"
+type = "legacy"
+url = "https://artifactory.adtran.com/artifactory/api/pypi/pypi/simple"
+
+[[package]]
+category = "dev"
+description = ""
+name = "sphinxcontrib-devhelp"
+optional = false
+python-versions = "*"
+version = "1.0.1"
+
+[package.source]
+reference = "artifactory"
+type = "legacy"
+url = "https://artifactory.adtran.com/artifactory/api/pypi/pypi/simple"
+
+[[package]]
+category = "dev"
+description = ""
+name = "sphinxcontrib-htmlhelp"
+optional = false
+python-versions = "*"
+version = "1.0.2"
+
+[package.source]
+reference = "artifactory"
+type = "legacy"
+url = "https://artifactory.adtran.com/artifactory/api/pypi/pypi/simple"
+
+[[package]]
+category = "dev"
+description = "A sphinx extension which renders display math in HTML via JavaScript"
+name = "sphinxcontrib-jsmath"
+optional = false
+python-versions = ">=3.5"
+version = "1.0.1"
+
+[package.source]
+reference = "artifactory"
+type = "legacy"
+url = "https://artifactory.adtran.com/artifactory/api/pypi/pypi/simple"
+
+[[package]]
+category = "dev"
+description = ""
+name = "sphinxcontrib-qthelp"
+optional = false
+python-versions = "*"
+version = "1.0.2"
+
+[package.source]
+reference = "artifactory"
+type = "legacy"
+url = "https://artifactory.adtran.com/artifactory/api/pypi/pypi/simple"
+
+[[package]]
+category = "dev"
+description = ""
+name = "sphinxcontrib-serializinghtml"
+optional = false
+python-versions = "*"
+version = "1.1.3"
+
+[package.source]
+reference = "artifactory"
+type = "legacy"
+url = "https://artifactory.adtran.com/artifactory/api/pypi/pypi/simple"
+
+[[package]]
+category = "dev"
+description = "Python Library for Tom's Obvious, Minimal Language"
+name = "toml"
+optional = false
+python-versions = "*"
+version = "0.10.0"
+
+[package.source]
+reference = "artifactory"
+type = "legacy"
+url = "https://artifactory.adtran.com/artifactory/api/pypi/pypi/simple"
+
+[[package]]
+category = "dev"
+description = "a fork of Python 2 and 3 ast modules with type comment support"
+marker = "implementation_name == \"cpython\""
+name = "typed-ast"
+optional = false
+python-versions = "*"
+version = "1.4.0"
+
+[package.source]
+reference = "artifactory"
+type = "legacy"
+url = "https://artifactory.adtran.com/artifactory/api/pypi/pypi/simple"
+
+[[package]]
+category = "dev"
+description = "HTTP library with thread-safe connection pooling, file post, and more."
+name = "urllib3"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, <4"
+version = "1.25.3"
+
+[package.source]
+reference = "artifactory"
+type = "legacy"
+url = "https://artifactory.adtran.com/artifactory/api/pypi/pypi/simple"
+
+[[package]]
+category = "dev"
+description = "Measures number of Terminal column cells of wide-character codes"
+name = "wcwidth"
+optional = false
+python-versions = "*"
+version = "0.1.7"
+
+[package.source]
+reference = "artifactory"
+type = "legacy"
+url = "https://artifactory.adtran.com/artifactory/api/pypi/pypi/simple"
+
+[[package]]
+category = "dev"
+description = "Module for decorators, wrappers and monkey patching."
+name = "wrapt"
+optional = false
+python-versions = "*"
+version = "1.11.2"
+
+[package.source]
+reference = "artifactory"
+type = "legacy"
+url = "https://artifactory.adtran.com/artifactory/api/pypi/pypi/simple"
+
+[[package]]
+category = "dev"
+description = "Backport of pathlib-compatible object wrapper for zip files"
+name = "zipp"
+optional = false
+python-versions = ">=2.7"
+version = "0.5.2"
+
+[package.source]
+reference = "artifactory"
+type = "legacy"
+url = "https://artifactory.adtran.com/artifactory/api/pypi/pypi/simple"
+
+[metadata]
+content-hash = "0403f1fbb4edc9bb4f1bc2ea22669fd1420a1a8a5f0cf68863e7b1fda029888e"
+python-versions = "^3.6"
+
+[metadata.hashes]
+alabaster = ["md5:3591827fde96d1dd23970fb05410ed04", "md5:6487fd5054a3eece3a6b96bda83d97b2"]
+appdirs = ["md5:44c679904082a2133f5566c8a0d3ab42", "md5:9ed4b51c9611775c3078b3831072e153"]
+astroid = ["md5:0e686c4f817ddcd3be18b31df644c3bc", "md5:acbe254795dda3174b06cd897f6e3785"]
+atomicwrites = ["md5:793e602b383d2f4a86d3c410053c0ccd", "md5:ce11f780a4ce0fce8a55d64494a88178"]
+attrs = ["md5:2be7bce157988928f5ff2bb50a0b510d", "md5:853dff18dd0f6cf4e9abc357e9df6e17"]
+babel = ["e86135ae101e31e2c8ec20a4e0c5220f4eed12487d5cf3f78be7e98d3a57fc28", "md5:b96fe47047fd07bc5797779d903d4fe2"]
+black = ["md5:1d6ea7e671eb11e15816341dd017515e", "md5:64016f69bccbe0edfc820a7f5a37eecc"]
+certifi = ["945e3ba63a0b9f577b1395204e13c3a231f9bc0223888be653286534e5873695", "md5:d8cb5a5984c291e69b9b0bf34423c865"]
+chardet = ["md5:0004b00caff7bb543a1d0d0bd0185a03", "md5:7dd1ba7f9c77e32351b0a0cfacf4055c"]
+click = ["md5:4de489e31c57834a21b8be7111dab613", "md5:7f53d50f7b7373ebc7963f9ff697450a"]
+colorama = ["05eed71e2e327246ad6b38c540c4a3117230b19679b875190486ddd2d721422d", "md5:d7c988b7a52ec3eb418a99b1128bca07"]
+coverage = ["39e088da9b284f1bd17c750ac672103779f7954ce6125fd4382134ac8d152d74", "3c205bc11cc4fcc57b761c2da73b9b72a59f8d5ca89979afb0c1c6f9e53c7390", "48020e343fc40f72a442c8a1334284620f81295256a6b6ca6d8aa1350c763bbe", "5296fc86ab612ec12394565c500b412a43b328b3907c0d14358950d06fd83baf", "68a43a9f9f83693ce0414d17e019daee7ab3f7113a70c79a3dd4c2f704e4d741", "7ad7536066b28863e5835e8cfeaa794b7fe352d99a8cded9f43d1161be8e9fbd", "7bacb89ccf4bedb30b277e96e4cc68cd1369ca6841bde7b005191b54d3dd1034", "8f9a95b66969cdea53ec992ecea5406c5bd99c9221f539bca1e8406b200ae98c", "998d7e73548fe395eeb294495a04d38942edb66d1fa61eb70418871bc621227e", "9e80d45d0c7fcee54e22771db7f1b0b126fb4a6c0a2e5afa72f66827207ff2f2", "a5d8f29e5ec661143621a8f4de51adfb300d7a476224156a39a392254f70687b", "aca06bfba4759bbdb09bf52ebb15ae20268ee1f6747417837926fae990ebc41d", "bb23b7a6fd666e551a3094ab896a57809e010059540ad20acbeec03a154224ce", "c62ca0a38958f541a73cf86acdab020c2091631c137bd359c4f5bddde7b75fd4", "c968a6aa7e0b56ecbd28531ddf439c2ec103610d3e2bf3b75b813304f8cb7723", "f46087bbd95ebae244a0eda01a618aff11ec7a069b15a3ef8f6b520db523dcf1", "f8019c5279eb32360ca03e9fac40a12667715546eed5c5eb59eb381f2f501260", "fc5f4d209733750afd2714e9109816a29500718b32dd9a5db01c0cb3a019b96a", "md5:10b284853a6acea002d1f9b3f15f2d9b", "md5:2562f5c3adfb5551973dd9a84bbbf6eb", "md5:4c38c91b2dd9ccb09e64e84e09013a05", "md5:4c5a59577562d5f7e6b4e9c7630300e5", "md5:8dd15f484da8b3088288c8cd72ed881b", "md5:99181c221a5dc8c5b5d1f00c62cf0624", "md5:ac6ff2f76b73db3474ed92ff50f9c4b0", "md5:b1abd2a3aad9184228874a8372672c1e", "md5:bef571be166f8c3d04dcf99bf1146f6d", "md5:cd47b76567782b1593e18f60fa3ca559", "md5:d498d2983159c8437c2fcaeff4fd98c9", "md5:f1ebc38404d7c10e65c01a3704091808", "md5:fb52d0ad122b999ede5d31e5b3b305ce"]
+docutils = ["md5:342521e37ef036f35559a07659cdc599", "md5:8d5a45abfb6ada7b7612022db5add831", "md5:f7b8b6a01a4615d2b0dd993729601369"]
+idna = ["md5:2e9ae0b4a0b26d1747c6127cdb060bc1", "md5:61392a071e4a3b0f84cd6d71f94f15cc"]
+imagesize = ["md5:2f89749b05e07c79c46330dbc62f1e02", "md5:e2defb5e1f937b87a0ed68868688df21"]
+importlib-metadata = ["cb6ee23b46173539939964df59d3d72c3e0c1b5d54b84f1d8a7e912fe43612db", "md5:424676f92482daa952f38c817d20558a"]
+isort = ["54da7e92468955c4fceacd0c86bd0ec997b0e1ee80d97f67c35a78b719dccab1", "md5:89fb4f4dbb97f6b9b7867612f2df9917"]
+jinja2 = ["md5:0ae535be40fd215a8114a090c8b68e5a", "md5:93ca8152bf9ca03214158a49d542402f"]
+lazy-object-proxy = ["159a745e61422217881c4de71f9eafd9d703b93af95618635849fe469a283661", "3f447aff8bc61ca8b42b73304f6a44fa0d915487de144652816f950a3f1ab821", "7c7f1ec07b227bdc561299fa2328e85000f90179a2f44ea30579d38e037cb3d4", "7c8b1ba1e15c10b13cad4171cfa77f5bb5ec2580abc5a353907780805ebe158e", "8559b94b823f85342e10d3d9ca4ba5478168e1ac5658a8a2f18c991ba9c52c20", "a262c7dfb046f00e12a2bdd1bafaed2408114a89ac414b0af8755c696eb3fc16", "be089bb6b83fac7f29d357b2dc4cf2b8eb8d98fe9d9ff89f9ea6012970a853c7", "dd6e2b598849b3d7aee2295ac765a578879830fb8966f70be8cd472e6069932e", "e408f1eacc0a68fed0c08da45f31d0ebb38079f043328dce69ff133b95c29dc1", "md5:0a904e9b6112c1337f404811e10cb53e", "md5:116e2f863ddc53174a5705f1f0bac2e3", "md5:272db13e0ea823afad64608d159cabac", "md5:323ae325455be70bc5a464926038bfa8", "md5:3e9615c0411134d93e2751c2f4bc023c", "md5:7b5b4ffa14ec9b2a6f390684c4e661ed", "md5:997db23a9004c1e8c577742a2fbfd6cb", "md5:e66aa0b6f51ebd57e6f723a5deb218ef", "md5:eda5ecdc213d40cc41b3e7a0627175cc"]
+markupsafe = ["md5:01e8f1759663535a494b0098c29bb39c", "md5:0f388d7e5e6ec5d5f32d18c83b7ef20d", "md5:1311d25a26d399bafe9f906f1e32cfb2", "md5:1440d3b8263d60b91d8185069be4302c", "md5:21d5f565a0ad798888a29e6344b454e0", "md5:4359c5ddfd8adafcc008d8080b245ac3", "md5:43fd756864fe42063068e092e220c57b", "md5:48d3bb7778533e2afb13bb6f2102635c", "md5:4a06edd1025c0939f7ae3c03f8d12c15", "md5:4b0b7116eb725fa9bca011bc7ad41c8b", "md5:58c2831fdcec66ef5c770ff4a9171479", "md5:5a8c2ae810dbbfc30938dcc5626be7fb", "md5:61aaa3e48888afbd2c25edd57dbdb17a", "md5:65e14c2f3e5d956ee5b6dd5bf3ea5a2d", "md5:6662480771cfe527182b5e1e610c291e", "md5:6c1b3183669011c54f6d26309b6f4562", "md5:743c64b4cdcb00233faf6696be732a67", "md5:77f6f9539e7d334066edfa54964d43cd", "md5:7b57475db9e376a94b19d63bd7417d54", "md5:91da0fab436b2165e03188083ea17e0f", "md5:a59779772929176978e53af881eabaab", "md5:a948c70a1241389d7120db90d69079ca", "md5:c937b3654640ee5864f2917bf24a7ad2", "md5:ce9334cb93c3fb155b6395458935ad61", "md5:e067ad66455299548fc7e96054cd6ff7", "md5:eb5bab451b3e4c729be0c7b9549e8bd9", "md5:f57d2a0fdb09f238da2bf31c964a6142", "md5:f583660da733f0dae2ec00e38a35481c"]
+mccabe = ["md5:6afffd590703262843327af8c4051928", "md5:723df2f7b1737b8887475bac4c763e1e"]
+more-itertools = ["md5:44bd1f65367d7b23a1823f38368e2e21", "md5:f647bfd27243a7bebe53b5ddb6a3b1c4"]
+packaging = ["md5:5d7eced24d2cfe7ea57491da74d739cb", "md5:dd118dc389f8e90840d44240292bf3d9"]
+pluggy = ["0825a152ac059776623854c1543d65a4ad408eb3d33ee114dff91e57ec6ae6fc", "md5:5c27b54570a48d4ad783eec40f87f930"]
+py = ["md5:d9e30436ce7e79f30847f9b30b62e149", "md5:daca50cf07cb09cae0469c9f6ea5272a"]
+pycodestyle = ["md5:2a88d00ad18eabab3bff2ad1f493bc59", "md5:40e7a76f364a18f531aaba11a4476e21"]
+pydocstyle = ["md5:b5dc3e089f6b8cf8e23b5b050c8fc25d"]
+pyflakes = ["d976835886f8c5b31d47970ed689944a0262b5f3afa00a5a7b4dc81e5449f8a2", "md5:727fedbb2913024e1d66de4bf17d827a"]
+pygments = ["881c4c157e45f30af185c1ffe8d549d48ac9127433f2c380c24b84572ad66297", "md5:ea723daf498a9805b481619c19ab75f8"]
+pylama = ["9bae53ef9c1a431371d6a8dca406816a60d547147b60a4934721898f553b7d8f", "md5:126920f85eb42e581748bfa55f9a5236"]
+pylint = ["md5:37b39717a69ab48fbe29aacc3bb3047c", "md5:cdf083e194036af42330d9795f7f3585"]
+pyparsing = ["d6c5ffe9d0305b9b977f7a642d36b9370954d1da7ada4c62393382cbadad4265", "md5:f9ca623487e86e77a1eaf1d466e5f7ea"]
+pytest = ["md5:39d59f899c381e5a144be312217cb753", "md5:e4f258bc9220828385e4ef8620904882"]
+pytest-cov = ["e00ea4fdde970725482f1f35630d12f074e121a23801aabf2ae154ec6bdd343a", "md5:9c3adf39cf0b0516d721f2764511c159"]
+pytz = ["md5:8b2860a161bfb0a6165798b1a2d8c40c", "md5:9494cbd701404080e83cbb316e692891"]
+requests = ["11e007a8a2aa0323f5a921e9e6a2d7e4e67d9877e85773fba9ba6419025cbeb4", "md5:d5327a0023c190febb7e2f491d5ca905"]
+six = ["md5:9ae5d1feed8c0215f4ae4adcd9207fcb", "md5:b0dc15d494e2d6e6c19cbbe482e91c5d"]
+snowballstemmer = ["md5:390ee6ab90cd202d6d2dc180f6aaea04"]
+sphinx = ["md5:37c966b81014b04046cdf4b94536eea8", "md5:a5a6980e2dcf87a803277d4296a42193"]
+sphinxcontrib-applehelp = ["md5:098c7bd28ba940494ffd3bb92c0b55e1", "md5:c3424507cc28291f8005081b6a96afb1"]
+sphinxcontrib-devhelp = ["md5:173ea18c7831cd8595c1b02f16e3935b", "md5:ecb33259e2e8300493d210140af7d957"]
+sphinxcontrib-htmlhelp = ["4670f99f8951bd78cd4ad2ab962f798f5618b17675c35c5ac3b2132a14ea8422", "md5:008b2ef1b3bec24c97164721e4e50892"]
+sphinxcontrib-jsmath = ["md5:4a9dbd97819fa713147472387ebd845d", "md5:e45179f0a3608b6766862e0f34c23b62"]
+sphinxcontrib-qthelp = ["md5:3532d4643d0b1cc3806e43f59495c030", "md5:471b12b9a612717671627a37ba822b06"]
+sphinxcontrib-serializinghtml = ["c0efb33f8052c04fd7a26c0a07f1678e8512e0faec19f4aa8f2473a8b81d5227", "md5:1d88f23e5e0eb7c3fc37e81391cbeda2"]
+toml = ["md5:63fffbe2d632865ec29cd69bfdf36682", "md5:70f2a3ce1fc099c20702b55f44f0b130"]
+typed-ast = ["18511a0b3e7922276346bcb47e2ef9f38fb90fd31cb9223eed42c85d1312344e", "262c247a82d005e43b5b7f69aff746370538e176131c32dda9cb0f324d27141e", "2b907eb046d049bcd9892e3076c7a6456c93a25bebfe554e931620c90e6a25b0", "354c16e5babd09f5cb0ee000d54cfa38401d8b8891eefa878ac772f827181a3c", "4e0b70c6fc4d010f8107726af5fd37921b666f5b31d9331f0bd24ad9a088e631", "630968c5cdee51a11c05a30453f8cd65e0cc1d2ad0d9192819df9978984529f4", "bc6c7d3fa1325a0c6613512a093bc2a2a15aeec350451cbdf9e1d4bffe3e3233", "d755f03c1e4a51e9b24d899561fec4ccaf51f210d52abdf8c07ee2849b212a36", "d896919306dd0aa22d0132f62a1b78d11aaf4c9fc5b3410d3c666b818191630a", "ffde2fbfad571af120fcbfbbc61c72469e72f550d676c3342492a9dfdefb8f12", "md5:0ae850eafff27e2507a2914e2fa4d1ab", "md5:9a3dd35e136427313465faa75f3110da", "md5:a073827d681f4c5e48d848a20bb32c04", "md5:d97389c4bb4b0d674c06347fe6bdf520", "md5:ffac3506e3f8a324dc0d17e8766bde73"]
+urllib3 = ["dbe59173209418ae49d485b87d1681aefa36252ee85884c31346debd19463232", "md5:e01c3465a7d687f1c164ac70a14ce002"]
+wcwidth = ["md5:9fb9f073e3560424296f3f2c745beac3", "md5:b3b6a0a08f0c8a34d1de8cf44150a4ad"]
+wrapt = ["md5:cc15c001b129f81eb2f79b15eb99ffe5"]
+zipp = ["4970c3758f4e89a7857a973b1e2a5d75bcdc47794442f2e2dd4fe8e0466e809a", "md5:32388bdca8dbad8c3d82ad8055230262"]
