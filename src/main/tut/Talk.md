@@ -8,9 +8,11 @@
 
 ## Whirlwind intro to FPGAs
 
+<img class="plain" src="figures/fpga.jpg" />
+
 - An FPGA is a collection of programmable logic elements
-- You can arrange the logic elements in a variety of ways to behave like
-  discrete logic components wired together, or like the gates in an ASIC
+- You can arrange the logic elements to behave like discrete logic components
+  wired together, or like the transistors in an ASIC
 
 ---
 
@@ -40,27 +42,43 @@ class OrGate extends Component {
 ```
 ---
 
-Testing our OR gate
+## Testing our components
 
-```tut:book
+<img class="plain" src="figures/just_like_the_simulations.jpg" />
+
+---
+
+Test the OR gate
+
+```tut:silent
 import spinal.core.sim._
 
-SimConfig.withWave.compile(new OrGate).doSim { dut =>
-  val truthTable = List(
-    (false, false, false),
-    (true, false, true),
-    (false, true, true),
-    (true, true, true)
-  )
+def testOrGate = {
+  SimConfig.withWave.compile(new OrGate).doSim { dut =>
+    val truthTable = List(
+      (false, false, false),
+      (true, false, true),
+      (false, true, true),
+      (true, true, true)
+    )
 
-  for ((a, b, expected_output) <- truthTable) {
-    println(s"$a & $b => $expected_output")
-    dut.io.a #= a
-    dut.io.b #= b
+    for ((a, b, expected_output) <- truthTable) {
+      println(s"$a & $b => $expected_output")
+      dut.io.a #= a
+      dut.io.b #= b
 
-    // Sleep one virtual cycle for the signal to propagate
-    sleep(1)
-    assert(dut.io.output.toBoolean == expected_output)
+      // Sleep one virtual cycle for the signal to propagate
+      sleep(1)
+      assert(dut.io.output.toBoolean == expected_output)
+    }
   }
 }
+```
+
+---
+
+Run the test
+
+```tut
+testOrGate
 ```
