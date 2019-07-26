@@ -1,4 +1,4 @@
-# Define a simple OrGate
+A simple OR gate
 
 ```tut:silent
 import spinal.core._
@@ -14,8 +14,9 @@ class OrGate extends Component {
   io.output := io.a | io.b
 }
 ```
+---
 
-# Test the OrGate
+Testing our OR gate
 
 ```tut:book
 import spinal.core.sim._
