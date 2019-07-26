@@ -10,3 +10,5 @@ libraryDependencies ++= Seq(
 )
 
 fork := true
+
+enablePlugins(TutPlugin)
