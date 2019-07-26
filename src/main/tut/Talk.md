@@ -1,3 +1,27 @@
+## What is SpinalHDL?
+
+- A hardware description language (HDL)
+- Used to program the internal logic layout of an FPGA (and ASICs too, but those are expensive!)
+- Similar to VHDL and Verilog in functionality, but is based on Scala
+
+---
+
+## Whirlwind intro to FPGAs
+
+- An FPGA is a collection of programmable logic elements
+- You can arrange the logic elements in a variety of ways to behave like
+  discrete logic components wired together, or like the gates in an ASIC
+
+---
+
+## Whirlwind intro to FPGAs
+
+- Development kits are very affordable
+- You can reprogram the logic as many times as you want, which means you can
+  iterate on your designs. Just like traditional software!
+
+---
+
 A simple OR gate
 
 ```tut:silent
