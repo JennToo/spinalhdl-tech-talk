@@ -13,14 +13,14 @@ class TestAndGate extends FunSuite {
         (true, true, true)
       )
 
-      for ((a, b, expected_output) <- truthTable) {
-        println(s"$a & $b => $expected_output")
+      for ((a, b, expectedOutput) <- truthTable) {
+        println(s"$a & $b => $expectedOutput")
         dut.io.a #= a
         dut.io.b #= b
 
         // Sleep one virtual cycle for the signal to propagate
         sleep(1)
-        assert(dut.io.output.toBoolean == expected_output)
+        assert(dut.io.output.toBoolean == expectedOutput)
       }
     }
   }

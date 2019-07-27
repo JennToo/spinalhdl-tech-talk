@@ -6,18 +6,23 @@ import org.scalatest.FunSuite
 class TestCounter extends FunSuite {
   test("A counter should count to its max and then reset") {
     SimConfig.withWave.compile(new Counter(42)).doSim { dut =>
+      dut.clockDomain.forkStimulus(period = 10)
+
       val expectedValues = (0 to 42) ++ (0 to 42)
 
+      dut.clockDomain.waitSampling();
+
       dut.io.reset #= true
-      sleep(1)
+      dut.clockDomain.waitFallingEdge();
+
       assert(dut.io.value.toInt == 0)
+      dut.clockDomain.waitFallingEdge();
       dut.io.reset #= false
 
       for (expectedValue <- expectedValues) {
         val value = dut.io.value.toInt
-        println(s"$value == $expectedValue")
         assert(value == expectedValue)
-        sleep(2)
+        dut.clockDomain.waitFallingEdge()
       }
     }
   }

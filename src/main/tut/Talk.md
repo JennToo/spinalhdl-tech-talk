@@ -82,3 +82,97 @@ Run the test
 ```tut
 testOrGate
 ```
+
+---
+
+## Sequential Logic
+
+- The next state of a sequential logic network depends on on its previous state
+- Synchronous logic is logic that only updates its state on the edge of a clock
+
+---
+
+Count up to `maxValue`, then reset back to 0
+
+```tut:silent
+object Counter {
+  def requiredBitWidth(value: Int): Int = {
+    (31 to 0 by -1)
+      .find({ index =>
+        (value & (1 << index)) != 0
+      })
+      .map(_ + 1)
+      .getOrElse(0)
+  }
+}
+
+class Counter(maxValue: Int) extends Component {
+  private val width = Counter.requiredBitWidth(maxValue)
+  val io = new Bundle {
+    val reset = in Bool
+    val value = out UInt (width bits)
+  }
+
+  private val register = Reg(UInt(width bits))
+
+  when(register === maxValue || io.reset) {
+    register := 0
+  }.otherwise {
+    register := register + 1
+  }
+  io.value := register
+}
+```
+
+---
+
+And to test the counter
+
+```tut:silent
+def testCounter = {
+  SimConfig.withWave.compile(new Counter(42)).doSim { dut =>
+    val expectedValues = (0 to 42) ++ (0 to 42)
+  
+    // Start the clock and wait for everything to settle
+    dut.clockDomain.forkStimulus(period = 10)
+    dut.clockDomain.waitSampling();
+  
+    // Reset our counter since it can start with any value
+    dut.io.reset #= true
+    // Our register updates on the rising edge of the clock,
+    // so we send the reset signal right in the middle of
+    // two update points
+    dut.clockDomain.waitFallingEdge();
+  
+    // Assert that we've reset to 0, then clear the
+    // reset signal
+    assert(dut.io.value.toInt == 0)
+    dut.clockDomain.waitFallingEdge();
+    dut.io.reset #= false
+  
+    // Now watch our counter count up each cycle
+    for (expectedValue <- expectedValues) {
+      val value = dut.io.value.toInt
+      assert(value == expectedValue)
+      dut.clockDomain.waitFallingEdge()
+    }
+  }
+}
+```
+
+---
+
+And then run the tests
+
+```tut
+testCounter
+```
+
+---
+
+If we're having trouble understanding why something has gone wrong, we can look
+at the signals using GtkWave
+
+<img class="plain" src="figures/waveform.png" />
+
+---
