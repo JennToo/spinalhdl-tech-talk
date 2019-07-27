@@ -1,10 +1,10 @@
 package spinalttl
-import spinal.core._
 
-object TestDecoder {
-  import spinal.core.sim._
+import spinal.core.sim._
+import org.scalatest.FunSuite
 
-  def main(args: Array[String]) {
+class TestDecoder extends FunSuite {
+  test("A decoder selects the nth bit with input n") {
     SimConfig.withWave.compile(new Decoder(5)).doSim { dut =>
       val decodeCases = List(
         (0, 0x01),

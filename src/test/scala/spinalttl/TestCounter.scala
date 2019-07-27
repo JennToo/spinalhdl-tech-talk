@@ -1,9 +1,10 @@
 package spinalttl
 
-object TestCounter {
-  import spinal.core.sim._
+import spinal.core.sim._
+import org.scalatest.FunSuite
 
-  def main(args: Array[String]) {
+class TestCounter extends FunSuite {
+  test("A counter should count to its max and then reset") {
     SimConfig.withWave.compile(new Counter(42)).doSim { dut =>
       val expectedValues = (0 to 42) ++ (0 to 42)
 

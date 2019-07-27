@@ -1,9 +1,10 @@
 package spinalttl
 
-object TestAndGate {
-  import spinal.core.sim._
+import spinal.core.sim._
+import org.scalatest.FunSuite
 
-  def main(args: Array[String]) {
+class TestAndGate extends FunSuite {
+  test("It's an AND gate...") {
     SimConfig.withWave.compile(new AndGate).doSim { dut =>
       val truthTable = List(
         (false, false, false),
