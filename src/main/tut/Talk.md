@@ -8,7 +8,7 @@
 
 ## Whirlwind intro to FPGAs
 
-<img class="plain" src="figures/fpga.jpg" />
+<img class="plain" src="figures/fpga.png" />
 
 - An FPGA is a collection of programmable logic elements
 - You can arrange the logic elements to behave like discrete logic components
@@ -17,6 +17,8 @@
 ---
 
 ## Whirlwind intro to FPGAs
+
+<img class="plain" src="figures/dev_board.png" />
 
 - Development kits are very affordable
 - You can reprogram the logic as many times as you want, which means you can
@@ -136,6 +138,7 @@ def testCounter = {
     // Start the clock and wait for everything to settle
     dut.clockDomain.forkStimulus(period = 10)
     dut.clockDomain.waitSampling();
+    dut.clockDomain.waitFallingEdge();
   
     // Reset our counter since it can start with any value
     dut.io.reset #= true
