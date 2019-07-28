@@ -5,6 +5,7 @@
 /tmp
 
 *.vhd
+*.v
 *.log
 /presentation.html
 *~
