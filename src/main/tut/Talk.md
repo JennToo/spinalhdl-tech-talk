@@ -376,4 +376,31 @@ topEntity = exposeClockResetEnable $ counter 42
 
 ---
 
-TODO
+```python
+from myhdl import block, always_seq, Signal, intbv, ResetSignal
+
+
+@block
+def counter(max, out, reset, clock):
+    @always_seq(clock.posedge, reset=reset)
+    def logic():
+        if out == max:
+            out.next = 0
+        else:
+            out.next = out + 1
+
+    return logic
+
+
+def convert():
+    max = 42
+    out = Signal(intbv(0))[9:]
+    reset = ResetSignal(0, active=1, isasync=True)
+    clock = Signal(bool(0))
+
+    counter1 = counter(max, out, reset, clock)
+    counter1.convert(hdl="Verilog")
+
+
+convert()
+```
