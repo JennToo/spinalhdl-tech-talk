@@ -311,3 +311,69 @@ endmodule
 - Documentation is a little weak
 - Some questionable development practices
 - Mostly a result of not too many people using it
+
+---
+
+## Other fancy HDLs
+
+---
+
+## Clash
+
+- A high-level sythensis compiler for Haskell
+- Write your code as regular Haskell and compile it to VHDL or Verilog
+- Some performance loss when optimizer isn't good enough
+- The generated HDL is very hard to follow
+
+---
+
+```haskell
+import Clash.Prelude
+
+countUpTo :: (Num a, Ord a) => a -> a -> a
+countUpTo max acc
+  | acc < max = acc + 1
+  | otherwise = 0
+
+counterTransition :: (Num a, Ord a) => a -> a -> b -> (a, a)
+counterTransition max currentState _ = (nextState, output)
+  where
+    nextState = countUpTo max currentState
+    output = currentState
+
+counter ::
+     (HiddenClockResetEnable dom, Undefined a, Num a, Ord a)
+  => a
+  -> Signal dom b
+  -> Signal dom a
+counter max = mealy (counterTransition max) 0
+
+topEntity ::
+     Clock System
+  -> Reset System
+  -> Enable System
+  -> Signal System ()
+  -> Signal System (Unsigned 9)
+topEntity = exposeClockResetEnable $ counter 42
+```
+
+---
+
+## Chisel
+
+- Another Scala DSL
+- Very similar syntax to SpinalHDL
+- Has a lot of contributors
+- Very volatile development
+
+---
+
+## MyHDL
+
+- A Python DSL based on function annotations
+- Syntatically similar to Verilog
+- Slow development
+
+---
+
+TODO
