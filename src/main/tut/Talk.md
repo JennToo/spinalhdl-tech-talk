@@ -55,7 +55,7 @@ class OrGate extends Component {
 ## Testing our components
 
 - We can test our hardware description without the need for real hardware!
-- This enables a cycle time closer to what software developers are confortable
+- This enables a cycle time closer to what software developers are comfortable
   with
 
 ---
@@ -294,7 +294,7 @@ endmodule
 
 - VexRiscV is a highly configurable, full featured RISC-V based soft CPU
 - https://github.com/SpinalHDL/VexRiscv
-- The core library ships with many common components, like counters buses and
+- The core library ships with many common components, like counters, buses, and
   video controllers
 
 ---
@@ -320,7 +320,7 @@ endmodule
 
 ## Clash
 
-- A high-level sythensis compiler for Haskell
+- A high-level synthesis (HLS) compiler for Haskell
 - Write your code as regular Haskell and compile it to VHDL or Verilog
 - Some performance loss when optimizer isn't good enough
 - The generated HDL is very hard to follow
@@ -371,13 +371,13 @@ topEntity = exposeClockResetEnable $ counter 42
 ## MyHDL
 
 - A Python DSL based on function annotations
-- Syntatically similar to Verilog
+- The syntax is very similar to Verilog
 - Slow development
 
 ---
 
 ```python
-from myhdl import block, always_seq, Signal, intbv, ResetSignal
+from myhdl import *
 
 
 @block
@@ -404,3 +404,7 @@ def convert():
 
 convert()
 ```
+
+---
+
+# The End
