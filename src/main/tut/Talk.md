@@ -407,4 +407,13 @@ convert()
 
 ---
 
+## Conclusion
+
+- If you're new to FPGAs, just stick with VHDL (or Verilog) to start
+- Don't try to use an HDL system for a base language you aren't familiar with
+- Experienced developers might find some useful tools among the various HDL
+  systems available now
+
+---
+
 # The End
